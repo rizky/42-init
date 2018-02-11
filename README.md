@@ -11,7 +11,6 @@ Get In to Docker-Machine
 
 export MACHINE_STORAGE_PATH=/tmp 
 eval $(docker-machine env default)
-docker run -it --name debian debian
 docker exec -it debian bash
 
 Network
@@ -22,3 +21,10 @@ Network
 11 traceroute slash16.org | grep nat-1
 12 traceroute 10.51.1.253
 14 host 10.51.1.81
+
+
+System
+03 https://www.cyberciti.biz/faq/debian-change-hostname-permanently/
+04 
+05
+06
