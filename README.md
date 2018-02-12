@@ -3,9 +3,8 @@ Create Docker-Machine
 export MACHINE_STORAGE_PATH=/tmp 
 docker-machine create default
 eval $(docker-machine env default)
-docker run -it --name debian debian
+docker run -it --privileged --name debian rizkyario/debian
 docker exec -it debian bash
-
 
 Get In to Docker-Machine
 
@@ -25,6 +24,8 @@ Network
 
 System
 03 https://www.cyberciti.biz/faq/debian-change-hostname-permanently/
-04 
+04
 05
 06
+
+Scripting
