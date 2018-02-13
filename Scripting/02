@@ -1,5 +1,5 @@
 crontab -l > mycron \
-echo "00 * * * 1-5 
+echo "00 4 * * 1 
 sudo apt-get update >> /var/log/update_script.log && \
 sudo apt-get upgrade >> /var/log/update_script.log" \
 crontab mycron
