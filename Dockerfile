@@ -8,7 +8,7 @@ RUN wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -
 
 RUN service rsyslog start
 
-RUN git clone https://github.com/rizkyario/42-init.git /root/init/
+COPY . /root/init/
 WORKDIR /root/init/
 
 CMD ["zsh"]
