@@ -4,7 +4,6 @@ export MACHINE_STORAGE_PATH=/tmp
 docker-machine create default
 eval $(docker-machine env default)
 docker run -it --privileged --name debian rizkyario/42-init
-docker exec -it debian bash
 
 Network
 
