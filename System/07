@@ -1,1 +1,1 @@
-ps u -C
+ps u -C sshd
