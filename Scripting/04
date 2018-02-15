@@ -1,5 +1,6 @@
 #!/bin/sh
-crontab -l | grep '0 0 \* \* \* /bin/sh /root/init/Scripting/04 2>&1' || echo '0 0 * * * /bin/sh /root/init/Scripting/04 2>&1' | crontab -
+crontab -l | grep '0 0 \* \* \* /bin/sh /root/init/Scripting/04 2>&1' || 
+crontab -l | { cat; echo '0 0 * * * /bin/sh /root/init/Scripting/04 2>&1';} | crontab -
 
 if [ ! -f /root/crontab_status ]; then
     md5sum /etc/crontab > /root/crontab_status
